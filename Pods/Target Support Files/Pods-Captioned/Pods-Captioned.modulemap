@@ -1,0 +1,6 @@
+framework module Pods_Captioned {
+  umbrella header "Pods-Captioned-umbrella.h"
+
+  export *
+  module * { export * }
+}

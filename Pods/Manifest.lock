@@ -1,0 +1,93 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - AlamofireSwiftyJSON (1.0.0):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 3.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - ColorWithHex (3.0.1)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
+  - FBSDKCoreKit (4.29.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.29.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.29.0):
+    - FBSDKCoreKit
+  - FontAwesome.swift (1.3.2)
+  - Material (2.13.3):
+    - Material/Core (= 2.13.3)
+  - Material/Core (2.13.3):
+    - Motion (~> 1.3.0)
+  - MHPrettyDate (1.1.1)
+  - Motion (1.3.3):
+    - Motion/Core (= 1.3.3)
+  - Motion/Core (1.3.3)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - ObjectMapper (3.1.0)
+  - RSKImageCropper (2.0.0)
+  - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (3.1.4)
+  - TTTAttributedLabel (2.0.0)
+  - ZFDragableModalTransition (0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlamofireObjectMapper
+  - AlamofireSwiftyJSON
+  - Bolts
+  - ColorWithHex
+  - Crashlytics
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - FontAwesome.swift
+  - Material
+  - MHPrettyDate
+  - NVActivityIndicatorView
+  - RSKImageCropper
+  - SVPullToRefresh
+  - TTTAttributedLabel
+  - ZFDragableModalTransition
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AlamofireSwiftyJSON: 78908b766483a28aa5cc90fd191a687467042973
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  ColorWithHex: cdd9c504d8e6b71f5f39bbfab0d9143e6c65d841
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
+  FBSDKLoginKit: 56a057ca6822535ea0faa25f57a7c41edb697fd4
+  FBSDKShareKit: 18a2cd118aef11dd657fe7e8b64bae5c719088b2
+  FontAwesome.swift: b4e4c8ccbbecb12f9b592bc533ff237af3706667
+  Material: 7c23a0569c69ca6e5c84a9e61aa186960cc656ab
+  MHPrettyDate: e0e5975041f0210c0542f4c5d7e3e44d1a8537be
+  Motion: 171fae75e927306cf906ab579ab5ac99d291658f
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  RSKImageCropper: d9a1acbc0600bf8decc8f0d21895872c99a9e4cf
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
+
+PODFILE CHECKSUM: 4af3b21dbc567a87f98731488335bcd8451d5b49
+
+COCOAPODS: 1.3.1
