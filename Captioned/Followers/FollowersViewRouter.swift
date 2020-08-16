@@ -4,3 +4,20 @@
 //
 
 import Foundation
+
+protocol FollowersViewRouter: ViewRouter {
+    
+}
+
+class FollowersViewRouterImplementation: FollowersViewRouter {
+    
+    fileprivate weak var followersViewController: FollowersViewController?
+    
+    init(followersViewController: FollowersViewController) {
+        
+        self.followersViewController = followersViewController
+        
+    }
+    
+}
+

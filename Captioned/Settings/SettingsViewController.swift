@@ -8,12 +8,18 @@ import Bolts
 
 let DefaultLoadingScreen = "Defaults.InitialLoadingScreen";
 
-class SettingsViewController: UITableViewController {
+class SettingsViewController: UITableViewController, SettingsView {
+
+    var presenter: SettingsPresenter?
+    var configurator = SettingsConfiguratorImplementation()
 
     @IBOutlet weak var loginLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configurator.configure(settingsViewController: self)
+
     }
 
     override func viewWillAppear(_ animated: Bool) {

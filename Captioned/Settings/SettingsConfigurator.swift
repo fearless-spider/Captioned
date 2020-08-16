@@ -4,3 +4,22 @@
 //
 
 import Foundation
+
+protocol SettingsConfigurator {
+    
+    func configure(settingsViewController: SettingsViewController)
+    
+}
+
+class SettingsConfiguratorImplementation: SettingsViewController {
+    
+    func configure(settingsViewController: SettingsViewController) {
+        
+        let router = SettingsViewRouterImplementation(settingsViewController: settingsViewController)
+        
+        let presenter = SettingsPresenterImplementation(view: settingsViewController, router: router)
+        
+        settingsViewController.presenter = presenter
+        
+    }
+}

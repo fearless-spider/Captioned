@@ -4,3 +4,19 @@
 //
 
 import Foundation
+
+protocol ProfileViewRouter: ViewRouter {
+    
+}
+
+class ProfileViewRouterImplementation: ProfileViewRouter {
+    
+    fileprivate weak var profileViewController: ProfileViewController?
+    
+    init(profileViewController: ProfileViewController) {
+        
+        self.profileViewController = profileViewController
+        
+    }
+    
+}

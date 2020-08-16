@@ -15,7 +15,11 @@ import ZFDragableModalTransition
 import MHPrettyDate
 
 
-public class FavoritesViewController: UIViewController {
+public class FavoritesViewController: UIViewController, FavoritesView {
+    
+    var presenter: FavoritesPresenter?
+    var configurator = FavoritesConfiguratorImplementation()
+
     @IBOutlet weak var tableView: UITableView!
 
     var tableData:[Post] = []
@@ -24,6 +28,8 @@ public class FavoritesViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+
+        configurator.configure(favoritesViewController: self)
 
         self.tableView.register(UINib(nibName: "PostViewCell", bundle: nil), forCellReuseIdentifier: "postCell")
 

@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+protocol ActivityConfigurator {
+    
+    func configure(activityViewController: ActivityViewController)
+    
+}
+
+class ActivityConfiguratorImplementation: ActivityViewController {
+    
+    func configure(activityViewController: ActivityViewController) {
+        
+        let router = ActivityViewRouterImplementation(activityViewController: activityViewController)
+        
+        let presenter = ActivityPresenterImplementation(view: activityViewController, router: router)
+        
+        activityViewController.presenter = presenter
+        
+    }
+}

@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+protocol ActivityViewRouter: ViewRouter {
+    
+}
+
+class ActivityViewRouterImplementation: ActivityViewRouter {
+    
+    fileprivate weak var activityViewController: ActivityViewController?
+    
+    init(activityViewController: ActivityViewController) {
+        
+        self.activityViewController = activityViewController
+        
+    }
+    
+}

@@ -4,3 +4,19 @@
 //
 
 import Foundation
+
+protocol SettingsViewRouter: ViewRouter {
+    
+}
+
+class SettingsViewRouterImplementation: SettingsViewRouter {
+    
+    fileprivate weak var settingsViewController: SettingsViewController?
+    
+    init(settingsViewController: SettingsViewController) {
+        
+        self.settingsViewController = settingsViewController
+        
+    }
+    
+}

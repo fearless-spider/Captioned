@@ -394,8 +394,8 @@ public class RootTabBar: UITabBarController {
 }
 
 extension RootTabBar: UITabBarControllerDelegate {
-    public func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
-        let nav = viewController as! UINavigationController
+    public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        _ = viewController as! UINavigationController
         
         return true
     }

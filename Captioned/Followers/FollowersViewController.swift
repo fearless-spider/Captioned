@@ -12,13 +12,19 @@ import Bolts
 import SVPullToRefresh
 import MHPrettyDate
 
-public class FollowersViewController: UIViewController {
+public class FollowersViewController: UIViewController, FollowersView {
+    
+    var presenter: FollowersPresenter?
+    var configurator = FollowersConfiguratorImplementation()
+
     @IBOutlet weak var tableView: UITableView!
 
     var tableData:[User] = []
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        configurator.configure(followersViewController: self)
 
         self.tableView.addPullToRefresh {() -> Void in
             self.tableData.removeAll()

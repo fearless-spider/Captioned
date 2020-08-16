@@ -9,7 +9,10 @@ import Alamofire
 import AlamofireImage
 import Bolts
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, SearchView {
+
+    var presenter: SearchPresenter?
+    var configurator = SearchConfiguratorImplementation()
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchTextField: UITextField!
@@ -24,6 +27,8 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        configurator.configure(searchViewController: self)
 
         let segmentedControl3 = XMSegmentedControl(frame: CGRect(x: 0, y: 46, width: self.view.frame.width, height: 44), segmentTitle: ["people", "trending", "competition"], selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
 

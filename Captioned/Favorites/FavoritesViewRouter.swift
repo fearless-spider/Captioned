@@ -4,3 +4,19 @@
 //
 
 import Foundation
+
+protocol FavoritesViewRouter: ViewRouter {
+    
+}
+
+class FavoritesViewRouterImplementation: FavoritesViewRouter {
+    
+    fileprivate weak var favoritesViewController: FavoritesViewController?
+    
+    init(favoritesViewController: FavoritesViewController) {
+        
+        self.favoritesViewController = favoritesViewController
+        
+    }
+    
+}

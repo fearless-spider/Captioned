@@ -4,3 +4,23 @@
 //
 
 import Foundation
+
+protocol FollowersConfigurator {
+    
+    func configure(followersViewController: FollowersViewController)
+    
+}
+
+class FollowersConfiguratorImplementation: FollowersViewController {
+    
+    func configure(followersViewController: FollowersViewController) {
+        
+        let router = FollowersViewRouterImplementation(followersViewController: followersViewController)
+        
+        let presenter = FollowersPresenterImplementation(view: followersViewController, router: router)
+        
+        followersViewController.presenter = presenter
+        
+    }
+}
+

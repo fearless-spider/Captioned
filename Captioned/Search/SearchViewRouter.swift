@@ -4,3 +4,19 @@
 //
 
 import Foundation
+
+protocol SearchViewRouter: ViewRouter {
+    
+}
+
+class SearchViewRouterImplementation: SearchViewRouter {
+    
+    fileprivate weak var searchViewController: SearchViewController?
+    
+    init(searchViewController: SearchViewController) {
+        
+        self.searchViewController = searchViewController
+        
+    }
+    
+}

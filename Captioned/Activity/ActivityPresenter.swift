@@ -7,3 +7,30 @@
 //
 
 import Foundation
+import Alamofire
+import Crashlytics
+import SwiftyJSON
+
+protocol ActivityView: class {
+    
+}
+
+protocol ActivityPresenter {
+    
+    var router: ActivityViewRouter { get }
+    
+}
+
+class ActivityPresenterImplementation: ActivityPresenter {
+    
+    fileprivate weak var view: ActivityView?
+    let router: ActivityViewRouter
+    
+    init(view: ActivityView, router: ActivityViewRouter) {
+        
+        self.view = view
+        self.router = router
+        
+    }
+    
+}

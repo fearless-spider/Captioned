@@ -34,6 +34,9 @@
 		A1141EC72003E520009BF558 /* ActivityViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1141EC62003E520009BF558 /* ActivityViewRouter.swift */; };
 		A1141EC92003E532009BF558 /* ActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1141EC82003E532009BF558 /* ActivityPresenter.swift */; };
 		A1141ECB2003E54C009BF558 /* ActivityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1141ECA2003E54C009BF558 /* ActivityConfigurator.swift */; };
+		A119059A201405FE008CD7E8 /* CommentsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1190599201405FE008CD7E8 /* CommentsViewRouter.swift */; };
+		A119059C20140617008CD7E8 /* CommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119059B20140617008CD7E8 /* CommentsPresenter.swift */; };
+		A119059E20140633008CD7E8 /* CommentsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119059D20140633008CD7E8 /* CommentsConfigurator.swift */; };
 		A1E6111F200B99F200B1B5CB /* UserProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6111E200B99F200B1B5CB /* UserProfileManager.swift */; };
 		A1E61122200BBA9F00B1B5CB /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E61121200BBA9F00B1B5CB /* NewPostViewController.swift */; };
 		A1E61125200BBADA00B1B5CB /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E61124200BBADA00B1B5CB /* CommentsViewController.swift */; };
@@ -166,6 +169,9 @@
 		A1141EC62003E520009BF558 /* ActivityViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewRouter.swift; sourceTree = "<group>"; };
 		A1141EC82003E532009BF558 /* ActivityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPresenter.swift; sourceTree = "<group>"; };
 		A1141ECA2003E54C009BF558 /* ActivityConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityConfigurator.swift; sourceTree = "<group>"; };
+		A1190599201405FE008CD7E8 /* CommentsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewRouter.swift; sourceTree = "<group>"; };
+		A119059B20140617008CD7E8 /* CommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPresenter.swift; sourceTree = "<group>"; };
+		A119059D20140633008CD7E8 /* CommentsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsConfigurator.swift; sourceTree = "<group>"; };
 		A1E6111E200B99F200B1B5CB /* UserProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileManager.swift; sourceTree = "<group>"; };
 		A1E61121200BBA9F00B1B5CB /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		A1E61124200BBADA00B1B5CB /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
@@ -453,6 +459,9 @@
 			isa = PBXGroup;
 			children = (
 				A1E61124200BBADA00B1B5CB /* CommentsViewController.swift */,
+				A1190599201405FE008CD7E8 /* CommentsViewRouter.swift */,
+				A119059B20140617008CD7E8 /* CommentsPresenter.swift */,
+				A119059D20140633008CD7E8 /* CommentsConfigurator.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -861,6 +870,7 @@
 			files = (
 				A1141E9D2002E2CF009BF558 /* AppEnvironment.swift in Sources */,
 				A1141EAD20030065009BF558 /* Captioned.swift in Sources */,
+				A119059E20140633008CD7E8 /* CommentsConfigurator.swift in Sources */,
 				A1141EA82002FAA8009BF558 /* RootBadge.swift in Sources */,
 				A1141EB2200300D7009BF558 /* NSMutableURLRequest+MultipartDataBuilder.swift in Sources */,
 				A1141EC52003E4C7009BF558 /* ActivityViewController.swift in Sources */,
@@ -912,6 +922,7 @@
 				EE8C64F74F8B81C90C6D7D15 /* SearchViewController.swift in Sources */,
 				EE8C6D7EECFC8CF4903F353F /* SignInViewController.swift in Sources */,
 				EE8C6C83CD4E4385341F29C9 /* SignUpViewController.swift in Sources */,
+				A119059A201405FE008CD7E8 /* CommentsViewRouter.swift in Sources */,
 				A1E61122200BBA9F00B1B5CB /* NewPostViewController.swift in Sources */,
 				EE8C6CA6D50F6661CD5A49C2 /* HomeViewController.swift in Sources */,
 				EE8C6F98FD84E211C66D910F /* UIImageCropper.swift in Sources */,
@@ -936,6 +947,7 @@
 				EE8C6B2ED0DDA37849BAEE56 /* HomeConfigurator.swift in Sources */,
 				EE8C6DBDB89BE9923FA17B05 /* SearchViewRouter.swift in Sources */,
 				EE8C616A1F86D795CC707DA4 /* SearchPresenter.swift in Sources */,
+				A119059C20140617008CD7E8 /* CommentsPresenter.swift in Sources */,
 				EE8C65A3A24B9383A0B6E30B /* SearchConfigurator.swift in Sources */,
 				EE8C6D441C866C515F8D1B86 /* ViewRouter.swift in Sources */,
 			);
